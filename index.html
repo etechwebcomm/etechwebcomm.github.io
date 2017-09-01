@@ -94,23 +94,27 @@
 	<article id="post-7315" class="post-7315 page type-page status-publish hentry wp-sticky" role="article" itemscope itemtype="http://schema.org/WebPage">
 							
 		<header class="article-header">
-			<h1 class="page-title">About</h1>
+			<h1 class="page-title">eTech Web Communications GitHub</h1>
 		</header>
 						
 	    <section class="entry-content" itemprop="articleBody">
 	    
 		 <!--<h2>Title</h2>-->
 		    
-		    <p>Lorem Ipsum.</p>
+		    <p>Welcome to the GitHub landing page for the College of Arts and Sciences eTech Web Communications group.</p>
 
     		<form id="feedback" action="https://universityofalabama.az1.qualtrics.com/jfe/form/SV_0UMAmhfZII0HWgB">
     			<input type="hidden" name="url" value="N/A">
     			<input type="hidden" name="ip" value="N/A">
     			<input type="hidden" name="useragent" value="N/A">
-    			<input type="hidden" name="error" value="cPanel: Host Landing Page">
+    			<input type="hidden" name="error" value="GitHub: Front Page Feedback">
     		</form>
 
-			<p>You may <a href="javascript:{}" onclick="document.getElementById('feedback').submit(); return false;">contact our team</a> at any time for further information and to report technical issues.</p>
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
+
+			<p>If you are visiting this resource because you are experiencing technical issues <a href="javascript:{}" onclick="document.getElementById('feedback').submit(); return false;">contact our team</a> and we will be delighted to help.</p>
 
 
 			<h2>Additional Information</h2>

@@ -6,7 +6,7 @@ Here's where the magic happens. Here is where you import
 all of your Sass files so they can compile into one
 CSS file. 
 ******************************************************************/
-@import url("http://fast.fonts.net/cssapi/3d315878-272d-4573-9bdd-6f98a7ec5834.css");
+@import url("//fast.fonts.net/cssapi/3d315878-272d-4573-9bdd-6f98a7ec5834.css");
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
